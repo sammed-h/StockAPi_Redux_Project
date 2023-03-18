@@ -1,0 +1,87 @@
+.tableConatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 92%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #6a4662;
+  color: #fff;
+}
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.homeLink {
+  font-size: 18px;
+}
+
+/* empty page */
+.watch-list {
+  margin: auto;
+  width: 80%;
+  font-size: 24px;
+  color: #777;
+  text-align: center;
+  min-width: 250px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.watch-list img {
+  height: 60px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+.empty-message {
+  display: block;
+}
+
+.delete-btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: rgb(221, 34, 34);
+}
+
+.watchListMobileView {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .watchListDekstopView {
+    display: none;
+  }
+  .watchListMobileView {
+    display: block;
+  }
+}
